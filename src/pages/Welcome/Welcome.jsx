@@ -22,12 +22,12 @@ function Welcome() {
           style={{ backgroundImage: `url(${Path.banner1})` }}
         ></div>
         <div className="flex absolute top-0 ml-[10%] h-2/3 w-[75%]">
-          <div className="searchContainer flex flex-col justify-around h-full ">
-            <img className="h-20 w-28 rounded-full " src={Path.logo} />
+          <div className="searchContainer flex flex-col justify-around h-full">
+            <img className="h-12 w-32 cursor-pointer" src={Path.logo} />
             <div className="WelcomeSearchBar w-full flex flex-row justify-between">
-              <input className="w-[88%] h-10 outline-none rounded-3xl pl-5 bg-white" />
+              <input className="w-[88%] h-10 outline-none rounded-3xl pl-5 bg-white" placeholder="Search"/>
               <div className="w-[10%]">
-                <div className="h-10 w-10 bg-themeColor rounded-full p-2">
+                <div className="h-10 w-10 bg-themeColor rounded-full p-2 cursor-pointer">
                   <img src={Path.searchIcon} />
                 </div>
               </div>
@@ -47,7 +47,8 @@ function Welcome() {
         </div>
       </div>
       <div className="bottomContainer px-32 relative top-[-11%]">
-        <div className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-bl-3xl w-[50%] flex flex-row justify-center items-center">
+        <div className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-bl-3xl w-[55%] flex flex-row 
+        justify-center items-center cursor-pointer">
           <span className="">Full Website</span>
           <img className="h-5 w-5 ml-1" src={Path.arrowRightIcon} />
         </div>
