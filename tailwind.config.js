@@ -9,7 +9,7 @@ module.exports = {
       },
       duration:{
         '2000': '2000ms'
-      }
+      },
     },
   },
   plugins: [],

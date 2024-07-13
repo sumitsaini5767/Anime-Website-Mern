@@ -1,0 +1,17 @@
+@keyframes slide-in {
+    0% {
+      transform: translateX(-16%);
+    }
+    50% {
+      transform: translateX(16%);
+    }
+    100% {
+      transform: translateX(-16%);
+    }
+  }
+
+  .searchContainerBackground{
+    scale: 150%;
+    transform: translate(-16%);
+    animation: slide-in 25s linear infinite;
+  }
