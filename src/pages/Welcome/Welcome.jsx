@@ -1,16 +1,18 @@
 import React from "react";
 import Path from "../../constants/Path";
 import "./Welcome.css";
+import { Link } from "react-router-dom";
+import Navpath from "../../constants/Navpath";
 
 function Welcome() {
   return (
     <div className="welcome h-screen bg-themeColorBackground overflow-x-hidden leading-5">
       <div className="topContainer h-20 bg-themeColorBackground flex items-end w-full px-32">
         <ul className="flex gap-14 *:text-white *:text-sm *:font-medium *:cursor-pointer">
-          <li className="hover:text-themeColor">Home</li>
-          <li className="hover:text-themeColor">Trending</li>
-          <li className="hover:text-themeColor">Recent Update</li>
-          <li className="hover:text-themeColor">New Release</li>
+          <li className="hover:text-themeColor"><Link to={Navpath.homePath}>Home</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.trendingPath}>Trending</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.recentUpdatesPath}> Recent Update</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.filtersPath}>New Release</Link></li>
         </ul>
       </div>
       <div className="SearchContainer relative h-2/3 w-full">
@@ -23,14 +25,14 @@ function Welcome() {
         ></div>
         <div className="flex absolute top-0 ml-[10%] h-2/3 w-[75%]">
           <div className="searchContainer flex flex-col justify-around h-full">
-            <img className="h-12 w-32 cursor-pointer" src={Path.logo} />
+            <img alt="logo" className="h-12 w-32 cursor-pointer" src={Path.logo} />
             <div className="WelcomeSearchBar w-full flex flex-row justify-between">
               <input className="w-[88%] h-10 outline-none rounded-3xl pl-5 bg-white" placeholder="Search"/>
-              <div className="w-[10%]">
+              <Link to={Navpath.filtersPath} className="w-[10%]">
                 <div className="h-10 w-10 bg-themeColor rounded-full p-2 cursor-pointer">
-                  <img src={Path.searchIcon} />
+                  <img alt="searchIcon" src={Path.searchIcon} />
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="topSearchContainer text-white flex flex-row flex-wrap">
               <h6 className=" text-sm">Top Search:</h6>
@@ -42,16 +44,16 @@ function Welcome() {
             </div>
           </div>
           <div className="relative characterImageContainer ">
-            <img className="" src={Path.character} />
+            <img alt="charcterImg" className="" src={Path.character} />
           </div>
         </div>
       </div>
       <div className="bottomContainer px-32 relative top-[-11%]">
-        <div className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-bl-3xl w-[55%] flex flex-row 
+        <Link to={Navpath.homePath} className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-bl-3xl w-[55%] flex flex-row 
         justify-center items-center cursor-pointer">
           <span className="">Full Website</span>
           <img className="h-5 w-5 ml-1" src={Path.arrowRightIcon} />
-        </div>
+        </Link>
         <div className="aboutWebsite mt-10 *:mt-10 font-extralight ">
           <p className="text-white text-xs w-[60%] ">
             <strong>Zorox</strong> (<strong>Zoroto</strong>,{" "}
