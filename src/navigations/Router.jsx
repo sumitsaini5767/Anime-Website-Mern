@@ -3,9 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Welcome from '../pages/Welcome/Welcome';
 import Dashboard from '../pages/Dashboard/Dashboard';
 import Home from '../pages/Home/Home';
-import Trending from '../pages/Trending/Trending';
-import Filters from '../pages/Filters/Filters';
-import RecentUpdates from '../pages/RecentUpdates/RecentUpdates';
+import Common from '../pages/CommonPage/Common';
 
 const Router = createBrowserRouter([
   {
@@ -25,16 +23,8 @@ const Router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/dashboard/trending",
-        element: <Trending />,
-      },
-      {
-        path: "/dashboard/filters",
-        element: <Filters />,
-      },
-      {
-        path: "/dashboard/recentUpdates",
-        element: <RecentUpdates />,
+        path: "/dashboard/common",
+        element: <Common />,
       },
     ],
   }

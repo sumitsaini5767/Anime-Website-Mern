@@ -1,8 +1,6 @@
 const Navpath = {
     homePath: "/dashboard/home",
-    trendingPath: "/dashboard/trending",
-    filtersPath: "/dashboard/filters",
-    recentUpdatesPath: "/dashboard/recentUpdates",
+    CommonPath: "/dashboard/common",
 }
 
 export default Navpath;

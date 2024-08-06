@@ -1,4 +1,4 @@
-@keyframes slide-in {
+@keyframes animateLoop {
     0% {
       transform: translateX(-16%);
     }
@@ -13,5 +13,5 @@
   .searchContainerBackground{
     scale: 150%;
     transform: translate(-16%);
-    animation: slide-in 25s linear infinite;
+    animation: animateLoop 25s linear infinite;
   }

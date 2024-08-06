@@ -3,6 +3,9 @@ const Path = {
   arrowRightIcon: require("../assets/icons/arrow-right.png"),
   searchIcon: require("../assets/icons/search-svgrepo.png"),
   bars_white :require("../assets/icons/bars_white.png"),
+  shuffleIcon :require("../assets/icons/shuffle.png"),
+  leftIcon :require("../assets/icons/leftIcon.png"),
+
 
   //images
   banner: require("../assets/images/banner.jpg"),
