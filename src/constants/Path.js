@@ -13,6 +13,7 @@ const Path = {
   banner2: require("../assets/images/banner2.jpg"),
   logo: require("../assets/images/logo.png"),
   character: require("../assets/images/character.png"),
+  footerbg: require("../assets/images/footerbg.jpg"),
   
 };
 
