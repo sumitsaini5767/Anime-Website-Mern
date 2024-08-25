@@ -53,7 +53,7 @@ function Welcome() {
         <Link to={Navpath.homePath} className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-bl-3xl w-[55%] flex flex-row 
         justify-center items-center cursor-pointer">
           <span className="">Full Website</span>
-          <img className="h-5 w-5 ml-1" src={Path.arrowRightIcon} />
+          <img alt="arrow" className="h-5 w-5 ml-1" src={Path.arrowRightIcon} />
         </Link>
         <div className="aboutWebsite mt-10 *:mt-10 font-extralight ">
           <p className="text-white text-xs w-[60%] ">
