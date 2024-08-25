@@ -7,7 +7,7 @@ import Navpath from "../../constants/Navpath";
 function Welcome() {
   return (
     <div className="welcome h-screen bg-themeColorBackground overflow-x-hidden leading-5">
-      <div className="topContainer h-20 bg-themeColorBackground flex items-end w-full px-32">
+      <div className="topContainer h-20 bg-themeColorBackground flex items-end w-full px-32 py-1">
         <ul className="flex gap-14 *:text-white *:text-sm *:font-medium *:cursor-pointer">
           <li className="hover:text-themeColor"><Link to={Navpath.homePath}>Home</Link></li>
           <li className="hover:text-themeColor"><Link to={Navpath.trendingPath}>Trending</Link></li>
@@ -25,18 +25,19 @@ function Welcome() {
         ></div>
         <div className="flex absolute top-0 ml-[10%] h-2/3 w-[75%]">
           <div className="searchContainer flex flex-col justify-around h-full">
-            <img alt="logo" className="h-12 w-32 cursor-pointer" src={Path.logo} />
+            <img alt="logo" className="h-14 w-40 cursor-pointer" src={Path.logo} />
             <div className="WelcomeSearchBar w-full flex flex-row justify-between">
-              <input className="w-[88%] h-10 outline-none rounded-3xl pl-5 bg-white" placeholder="Search"/>
+              <input className="w-[88%] h-12 outline-none rounded-3xl pl-5 bg-white" placeholder="Search"/>
               <Link to={Navpath.filtersPath} className="w-[10%]">
-                <div className="h-10 w-10 bg-themeColor rounded-full p-2 cursor-pointer">
+                <div className="h-12 w-12 bg-themeColor rounded-full p-3 cursor-pointer">
                   <img alt="searchIcon" src={Path.searchIcon} />
                 </div>
               </Link>
             </div>
             <div className="topSearchContainer text-white flex flex-row flex-wrap">
-              <h6 className=" text-sm">Top Search:</h6>
-              <p className=" text-xs">
+              
+              <p className=" text-sm font-extralight">
+                <span className="text-sm text-white">Top Search:</span>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Sapiente voluptas expedita similique voluptatum sunt ducimus in
                 nam dolores odit animi repellat, perferendis maxime aperiam quam
@@ -82,7 +83,7 @@ function Welcome() {
             multiple languages, and users can choose from various quality
             settings to ensure a smooth streaming experience.
           </p>
-          <p className="text-white text-xs w-[100%] ">
+          <p className="text-white text-xs w-[60%] ">
             If you have trouble accessing Zorox, you can try{" "}
             <a href="https://anix.to">anix</a> or{" "}
             <a href="https://gogoanimex.to">gogoanime</a>, Zorox is committed to
