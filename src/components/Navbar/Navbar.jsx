@@ -77,7 +77,7 @@ const Navbar = () => {
       </div>
 
       {showSideBar && (
-        <div className="fixed top-0 w-full h-full bg-navBodyBackground">
+        <div className="fixed top-0 w-full h-full bg-navBodyBackground z-20">
           <div
             className=" h-full "
             onClick={() => {
@@ -110,7 +110,7 @@ const Navbar = () => {
               }}
             >
               <li>
-                <Link to={Navpath.homePath} property="Home">Home</Link>
+                <Link to={Navpath.homePath} state={{PageType:"Home"}}>Home</Link>
               </li>
               <li>
                 <Link to={Navpath.CommonPath} state={{PageType:"Trending"}}>Trending</Link>
