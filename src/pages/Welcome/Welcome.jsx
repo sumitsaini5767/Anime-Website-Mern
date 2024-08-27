@@ -9,10 +9,10 @@ function Welcome() {
     <div className="welcome h-screen bg-themeColorBackground overflow-x-hidden leading-5">
       <div className="topContainer h-20 bg-themeColorBackground flex items-end w-full px-32 py-1">
         <ul className="flex gap-14 *:text-white *:text-sm *:font-medium *:cursor-pointer">
-          <li className="hover:text-themeColor"><Link to={Navpath.homePath}>Home</Link></li>
-          <li className="hover:text-themeColor"><Link to={Navpath.trendingPath}>Trending</Link></li>
-          <li className="hover:text-themeColor"><Link to={Navpath.recentUpdatesPath}> Recent Update</Link></li>
-          <li className="hover:text-themeColor"><Link to={Navpath.filtersPath}>New Release</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"Home"}}>Home</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"Trending"}}>Trending</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"Recent Update"}}> Recent Update</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"New Release"}}>New Release</Link></li>
         </ul>
       </div>
       <div className="SearchContainer relative h-2/3 w-full">
@@ -32,7 +32,7 @@ function Welcome() {
             <img alt="logo" className="h-14 w-40 cursor-pointer mb-5" src={Path.logo} />
             <div className="WelcomeSearchBar w-full flex flex-row justify-between mb-5">
               <input className="w-[88%] h-12 outline-none rounded-3xl pl-5 bg-white" placeholder="Search"/>
-              <Link to={Navpath.filtersPath} className="w-[10%]">
+              <Link to={Navpath.CommonPath} state={{PageType:"Trending"}} className="w-[10%]">
                 <div className="h-12 w-12 bg-themeColor rounded-full p-3 cursor-pointer">
                   <img alt="searchIcon" src={Path.searchIcon} />
                 </div>
@@ -54,7 +54,7 @@ function Welcome() {
         </div>
       </div>
       <div className="bottomContainer px-32 relative top-[-11%]">
-        <Link to={Navpath.homePath} className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-3xl w-[55%] h-12 flex flex-row 
+        <Link to={Navpath.CommonPath}  state={{PageType:"Home"}} className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-3xl w-[55%] h-12 flex flex-row 
         justify-center items-center cursor-pointer">
           <span className="text-xl">Full Website</span>
           <img alt="arrow" className="h-7 w-7 ml-5" src={Path.arrowRightIcon} />

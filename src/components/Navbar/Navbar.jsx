@@ -110,7 +110,7 @@ const Navbar = () => {
               }}
             >
               <li>
-                <Link to={Navpath.homePath} state={{PageType:"Home"}}>Home</Link>
+                <Link to={Navpath.CommonPath} state={{PageType:"Home"}}>Home</Link>
               </li>
               <li>
                 <Link to={Navpath.CommonPath} state={{PageType:"Trending"}}>Trending</Link>
