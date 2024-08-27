@@ -20,13 +20,17 @@ function Welcome() {
           className="searchContainerBackground relative h-2/3 bg-cover mt-20
         before:content-[''] before:absolute before:-top-1 before:left-0 before:h-full before:w-full 
         before:bg-gradient-to-b from-[#202125] to-[rgba(32,33,37,0)]
+
+        after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-full after:w-full 
+        after:bg-gradient-to-t from-[#202125] to-[rgba(32,33,37,0)]
+
         "
           style={{ backgroundImage: `url(${Path.banner1})` }}
         ></div>
         <div className="flex absolute top-0 ml-[10%] h-2/3 w-[75%]">
-          <div className="searchContainer flex flex-col justify-around h-full">
-            <img alt="logo" className="h-14 w-40 cursor-pointer" src={Path.logo} />
-            <div className="WelcomeSearchBar w-full flex flex-row justify-between">
+          <div className="searchContainer flex flex-col h-full">
+            <img alt="logo" className="h-14 w-40 cursor-pointer mb-5" src={Path.logo} />
+            <div className="WelcomeSearchBar w-full flex flex-row justify-between mb-5">
               <input className="w-[88%] h-12 outline-none rounded-3xl pl-5 bg-white" placeholder="Search"/>
               <Link to={Navpath.filtersPath} className="w-[10%]">
                 <div className="h-12 w-12 bg-themeColor rounded-full p-3 cursor-pointer">
@@ -37,7 +41,7 @@ function Welcome() {
             <div className="topSearchContainer text-white flex flex-row flex-wrap">
               
               <p className=" text-sm font-extralight">
-                <span className="text-sm text-white">Top Search:</span>
+                <span className="text-sm text-themeColor">Top Search: </span>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Sapiente voluptas expedita similique voluptatum sunt ducimus in
                 nam dolores odit animi repellat, perferendis maxime aperiam quam
@@ -50,10 +54,10 @@ function Welcome() {
         </div>
       </div>
       <div className="bottomContainer px-32 relative top-[-11%]">
-        <Link to={Navpath.homePath} className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-bl-3xl w-[55%] flex flex-row 
+        <Link to={Navpath.homePath} className="fullWebsiteBtn bg-themeColor py-2 rounded-br-3xl rounded-3xl w-[55%] h-12 flex flex-row 
         justify-center items-center cursor-pointer">
-          <span className="">Full Website</span>
-          <img alt="arrow" className="h-5 w-5 ml-1" src={Path.arrowRightIcon} />
+          <span className="text-xl">Full Website</span>
+          <img alt="arrow" className="h-7 w-7 ml-5" src={Path.arrowRightIcon} />
         </Link>
         <div className="aboutWebsite mt-10 *:mt-10 font-extralight ">
           <p className="text-white text-xs w-[60%] ">
@@ -92,10 +96,10 @@ function Welcome() {
             you like it.
           </p> 
         </div>
-        <div class="copyrightContainer text-white text-xs mt-28">
+        <div className="copyrightContainer text-white text-xs mt-28">
             {" "}
-            <p class="copyright">©2021 Zoro. All rights reserved.</p>{" "}
-            <p class="mb-0 mt-2">
+            <p className="copyright">©2021 Zoro. All rights reserved.</p>{" "}
+            <p className="mb-0 mt-2">
               <a href="/" target="_blank">
                 Read Manga Online
               </a>
