@@ -52,7 +52,11 @@ const Footer = () => {
     <div className="relative z-10">
       <div
         className="bg-cover bg-no-repeat bg-center py-8 px-4  before:content-[''] before:absolute before:top-0 
-        before:left-0 before:h-full before:w-full before:bg-gradient-to-b from-[#202125] to-[rgba(32,33,37,0)] z-0"
+        before:left-0 before:h-full before:w-full before:bg-gradient-to-b from-[#202125] to-[rgba(32,33,37,0)] z-0
+        
+        after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-full after:w-full 
+        after:bg-gradient-to-t from-[#202125] to-[rgba(32,33,37,0)]
+        "
         style={{ backgroundImage: `url(${Path.footerbg})` }}
       >
         <div className="relative z-10">
@@ -63,8 +67,8 @@ const Footer = () => {
               src={Path.logo}
             />
           </div>
-          <div className="flex flex-row items-end mb-5">
-            <h3 className="text-white font-semibold pr-5 border-r-[1px] border-r-[rgba(255,255,255,0.15)]">
+          <div className="flex flex-row items-center mb-5">
+            <h3 className="text-white font-semibold pr-5 border-r-2">
               A-Z LIST
             </h3>
             <p className="text-white text-sm ml-5">
@@ -72,7 +76,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex flex-row mb-5">
-            <ul className="flex *:text-white *:mr-2 *:bg-themeSecondaryColor *:*:rounded-sm *:cursor-pointer *:hover:*:bg-themeColor
+            <ul className="flex *:text-white *:mr-2 *:bg-themeSecondaryColor *:*:rounded-sm *:rounded-sm *:cursor-pointer *:hover:*:bg-themeColor
              *:hover:*:text-black *:*:px-2 *:*:py-1">
               {alphabetButtons}
             </ul>
