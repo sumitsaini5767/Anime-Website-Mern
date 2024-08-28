@@ -25,7 +25,11 @@ const Navbar = () => {
             }}
             className="flex items-center mr-5"
           >
-            <img alt="menuIcon" className="h-6 w-6 cursor-pointer" src={path.bars_white} />
+            <img
+              alt="menuIcon"
+              className="h-6 w-6 cursor-pointer"
+              src={path.bars_white}
+            />
           </button>
           <img
             alt="logo"
@@ -39,7 +43,11 @@ const Navbar = () => {
               placeholder="Search anime..."
             />
             <button>
-              <img alt="searchIcon" className="h-4 w-4 mr-4" src={path.searchIcon} />
+              <img
+                alt="searchIcon"
+                className="h-4 w-4 mr-4"
+                src={path.searchIcon}
+              />
             </button>
             <button
               className="bg-themeSecondaryColor px-2 rounded-sm hover:bg-themeSecondarybright
@@ -110,25 +118,25 @@ const Navbar = () => {
               }}
             >
               <li>
-                <Link to={Navpath.CommonPath} state={{PageType:"Home"}}>Home</Link>
+                <Link to={Navpath.homePath}>Home</Link>
               </li>
               <li>
-                <Link to={Navpath.CommonPath} state={{PageType:"Trending"}}>Trending</Link>
+                <Link to={Navpath.trendingPath}>Trending</Link>
               </li>
               <li>
-                <Link to={Navpath.CommonPath} state={{PageType:"Tv Series"}}>TV Series</Link>
+                <Link to={Navpath.tvSeriesPath}>TV Series</Link>
               </li>
               <li>
-                <Link to={Navpath.CommonPath} state={{PageType:"Movies"}}>Movies</Link>
+                <Link to={Navpath.moviesPath}>Movies</Link>
               </li>
               <li>
-                <Link to={Navpath.CommonPath} state={{PageType:"OVAs"}}>OVAs</Link>
+                <Link to={Navpath.ovasPath}>OVAs</Link>
               </li>
               <li>
-                <Link to={Navpath.CommonPath} state={{PageType:"ONAs"}}>ONAs</Link>
+                <Link to={Navpath.onasPath}>ONAs</Link>
               </li>
               <li>
-                <Link to={Navpath.CommonPath} state={{PageType:"Specials"}}>Specials</Link>
+                <Link to={Navpath.specialsPath}>Specials</Link>
               </li>
             </ul>
           </div>

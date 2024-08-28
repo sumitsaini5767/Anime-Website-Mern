@@ -9,10 +9,10 @@ function Welcome() {
     <div className="welcome h-screen bg-themeColorBackground overflow-x-hidden leading-5">
       <div className="topContainer h-20 bg-themeColorBackground flex items-end w-full px-32 py-1">
         <ul className="flex gap-14 *:text-white *:text-sm *:font-medium *:cursor-pointer">
-          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"Home"}}>Home</Link></li>
-          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"Trending"}}>Trending</Link></li>
-          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"Recent Update"}}> Recent Update</Link></li>
-          <li className="hover:text-themeColor"><Link to={Navpath.CommonPath} state={{PageType:"New Release"}}>New Release</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.homePath} >Home</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.trendingPath} >Trending</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.moviesPath} > Movies</Link></li>
+          <li className="hover:text-themeColor"><Link to={Navpath.specialsPath} >Specials</Link></li>
         </ul>
       </div>
       <div className="SearchContainer relative h-2/3 w-full">

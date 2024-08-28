@@ -10,34 +10,19 @@ const Footer = () => {
     const buttons = [];
     buttons.push(
       <li key={"All"}>
-        <Link
-          to={Navpath.CommonPath}
-          state={{ PageType: "A-Z List", letter: "All" }}
-        >
-          All
-        </Link>
+        <button>All</button>
       </li>
     );
     buttons.push(
       <li key={"0-9"}>
-        <Link
-          to={Navpath.CommonPath}
-          state={{ PageType: "A-Z List", letter: "0-9" }}
-        >
-          0-9
-        </Link>
+        <button>0-9</button>
       </li>
     );
     for (let i = 65; i <= 90; i++) {
       const letter = String.fromCharCode(i);
       buttons.push(
         <li key={letter}>
-          <Link
-            to={Navpath.CommonPath}
-            state={{ PageType: "A-Z List", letter: letter }}
-          >
-            {letter}
-          </Link>
+          <button>{letter}</button>
         </li>
       );
     }
@@ -76,8 +61,10 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex flex-row mb-5">
-            <ul className="flex *:text-white *:mr-2 *:bg-themeSecondaryColor *:*:rounded-sm *:rounded-sm *:cursor-pointer *:hover:*:bg-themeColor
-             *:hover:*:text-black *:*:px-2 *:*:py-1">
+            <ul
+              className="flex *:text-white *:mr-2 *:bg-themeSecondaryColor *:*:rounded-sm *:rounded-sm *:cursor-pointer *:hover:*:bg-themeColor
+             *:hover:*:text-black *:*:px-2 *:*:py-1"
+            >
               {alphabetButtons}
             </ul>
           </div>
